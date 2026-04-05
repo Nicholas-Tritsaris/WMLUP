@@ -1,0 +1,241 @@
+/* MSN 2003 Precise Styling */
+:root {
+    --msn-bg-blue: #2d5db3;
+    --msn-nav-blue: #003399;
+    --msn-sidebar-bg: #e5e5cc;
+    --msn-subnav-bg: #ccd5e7;
+    --msn-text-blue: #003366;
+    --msn-headline-purple: #ccccff;
+    --msn-money-green: #ccffcc;
+    --msn-shopping-orange: #ffcc99;
+    --msn-entertainment-yellow: #ffffcc;
+    --msn-right-sidebar-blue: #3a6ea5;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+a {
+    color: #003399;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Area */
+.msn-top-bar {
+    background-color: var(--msn-bg-blue);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+    justify-content: space-between;
+}
+
+.msn-logo-area {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.msn-logo-area h1 {
+    margin: 0;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.msn-tabs {
+    display: flex;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.msn-tab {
+    background-color: #4b7bbd;
+    padding: 5px 15px;
+    margin-right: 2px;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    color: #fff;
+    border-top: 1px solid #7ea7d8;
+    border-left: 1px solid #7ea7d8;
+    border-right: 1px solid #7ea7d8;
+}
+
+.msn-tab.active {
+    background-color: #fff;
+    color: var(--msn-nav-blue);
+    border: none;
+    padding-bottom: 6px;
+}
+
+.msn-nav-bar {
+    background-color: var(--msn-nav-blue);
+    color: white;
+    padding: 3px 10px;
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.msn-nav-bar a {
+    color: white;
+    font-weight: bold;
+}
+
+.msn-search-bar {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Layout */
+.msn-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Left Sidebar */
+.msn-left-sidebar {
+    width: 150px;
+    background-color: var(--msn-sidebar-bg);
+    border-right: 1px solid #999;
+    flex-shrink: 0;
+    min-height: 600px;
+}
+
+.sidebar-cat {
+    margin-bottom: 0;
+}
+
+.sidebar-cat-header {
+    font-weight: bold;
+    color: #fff;
+    background-color: #9ab;
+    padding: 2px 5px;
+    margin-bottom: 0;
+    font-size: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #789;
+}
+
+.sidebar-cat ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.sidebar-cat li {
+    margin-bottom: 3px;
+}
+
+.sidebar-cat a {
+    color: #003366;
+}
+
+/* Main Content Area */
+.msn-main {
+    flex-grow: 1;
+    padding: 0;
+}
+
+.msn-section {
+    margin-bottom: 10px;
+}
+
+.msn-section-header {
+    padding: 2px 10px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.msn-section-header.purple { background-color: var(--msn-headline-purple); color: #003399; }
+.msn-section-header.green { background-color: var(--msn-money-green); color: #006600; }
+.msn-section-header.orange { background-color: var(--msn-shopping-orange); color: #993300; }
+.msn-section-header.yellow { background-color: var(--msn-entertainment-yellow); color: #666600; }
+
+.msn-section-content {
+    padding: 10px;
+}
+
+/* Right Sidebar */
+.msn-right-sidebar {
+    width: 180px;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.right-box {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.right-box-header {
+    background-color: var(--msn-right-sidebar-blue);
+    color: white;
+    padding: 3px 5px;
+    font-weight: bold;
+}
+
+.right-box-content {
+    padding: 5px;
+}
+
+/* Interactivity Classes */
+.collapsed {
+    display: none;
+}
+
+.expandable-header {
+    cursor: pointer;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.card:hover {
+    border-color: #f60;
+}
+
+footer {
+    background-color: var(--msn-bg-blue);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.msn-nav-bottom {
+    background-color: #fff;
+    padding: 10px;
+    border-top: 5px solid #6c9eef;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 10px;
+}

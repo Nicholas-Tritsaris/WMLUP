@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>msn.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="msn-top-bar">
+        <div class="msn-logo-area">
+            <h1>msn</h1>
+            <span style="font-size: 10px;">Help</span>
+        </div>
+        <div class="msn-tabs">
+            <div class="msn-tab">MSN Home</div>
+            <div class="msn-tab active">My MSN</div>
+            <div class="msn-tab">Sign In</div>
+        </div>
+        <div id="date-display" style="font-size: 10px;"></div>
+    </div>
+
+    <div class="msn-nav-bar">
+        <a href="../WMLUP/index.html">MSN Home</a> |
+        <a href="index.html">My MSN</a> |
+        <a href="#">Search</a> |
+        <a href="#">Shopping</a> |
+        <a href="#">Money</a> |
+        <a href="#">People & Chat</a>
+    </div>
+
+    <div class="msn-search-bar">
+        <span>Search the Web:</span>
+        <input type="text" style="width: 200px;">
+        <button style="background-color: #ddd; border: 1px solid #999;">Search</button>
+        <div id="search-results" style="margin-left: 20px;"></div>
+    </div>
+
+    <div class="msn-container">
+        <aside class="msn-left-sidebar">
+            <div class="sidebar-cat">
+                <div class="sidebar-cat-header">WP8.1 Navigation</div>
+                <ul>
+                    <li><a href="index.html">Platform Overview</a></li>
+                    <li><a href="#metadata">Update Metadata</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-cat">
+                <div class="sidebar-cat-header">Related Hubs</div>
+                <ul>
+                    <li><a href="../WMLUP/index.html">WMLUP Hub</a></li>
+                    <li><a href="../W10MLUP/index.html">W10MLUP</a></li>
+                    <li><a href="../W7MLUP/index.html">W7MLUP</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="msn-main">
+            <section class="msn-section">
+                <div class="msn-section-header purple">
+                    <span>W81MLUP Research</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content">
+                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Windows Phone 8 / 8.1 Update Metadata & Tools Research</p>
+                    <p>Focuses on the mid-complexity Windows Update style metadata.</p>
+                </div>
+            </section>
+
+            <section class="msn-section">
+                <div class="msn-section-header green">
+                    <span>Update Metadata</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content" id="metadata">
+                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
+                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand Update Metadata details</div>
+                        <div class="expandable-content" style="display: none; padding: 10px;">
+                            <p>Windows Phone 8 uses a similar update delivery system to desktop Windows Update, relying on XML/CAB packages.</p>
+                            <ul>
+                                <li>Metadata discovery: XML catalog</li>
+                                <li>Package delivery: CAB file extraction</li>
+                                <li>OS identification: Registry-based device info</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="msn-section">
+                <div class="msn-section-header orange">
+                    <span>Available Tools</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content" id="tools">
+                    <div style="display: flex; gap: 10px;">
+                        <div class="card" style="flex: 1;">
+                            <h3 style="margin-top: 0;">Metadata Parser</h3>
+                            <p>A tool for parsing WP8.1 update catalogs.</p>
+                        </div>
+                        <div class="card" style="flex: 1;">
+                            <h3 style="margin-top: 0;">Registry Mock</h3>
+                            <p>Simulating device registry for update simulation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="msn-right-sidebar">
+            <div class="right-box">
+                <div class="right-box-header">Featured Channels</div>
+                <div class="right-box-content">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="#">Lumia 1020</a></li>
+                        <li><a href="#">WP8 Dev Hub</a></li>
+                        <li><a href="docs/overview.md" target="_blank">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="msn-nav-bottom">
+        <a href="../WMLUP/index.html">MSN Home</a> |
+        <a href="#">My MSN</a> |
+        <a href="#">Search</a> |
+        <a href="#">Shopping</a> |
+        <a href="#">Money</a>
+    </div>
+
+    <footer style="margin-top: 0;">
+        <p>&copy; 2003 Microsoft Corporation. All rights reserved. Terms of Use Advertise TRUSTe Approved Privacy Statement</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
