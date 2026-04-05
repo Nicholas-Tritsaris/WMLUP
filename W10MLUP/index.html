@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>msn.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="msn-top-bar">
+        <div class="msn-logo-area">
+            <h1>msn</h1>
+            <span style="font-size: 10px;">Help</span>
+        </div>
+        <div class="msn-tabs">
+            <div class="msn-tab">MSN Home</div>
+            <div class="msn-tab active">My MSN</div>
+            <div class="msn-tab">Sign In</div>
+        </div>
+        <div id="date-display" style="font-size: 10px;"></div>
+    </div>
+
+    <div class="msn-nav-bar">
+        <a href="../WMLUP/index.html">MSN Home</a> |
+        <a href="index.html">My MSN</a> |
+        <a href="#">Search</a> |
+        <a href="#">Shopping</a> |
+        <a href="#">Money</a> |
+        <a href="#">People & Chat</a>
+    </div>
+
+    <div class="msn-search-bar">
+        <span>Search the Web:</span>
+        <input type="text" style="width: 200px;">
+        <button style="background-color: #ddd; border: 1px solid #999;">Search</button>
+        <div id="search-results" style="margin-left: 20px;"></div>
+    </div>
+
+    <div class="msn-container">
+        <aside class="msn-left-sidebar">
+            <div class="sidebar-cat">
+                <div class="sidebar-cat-header">W10M Navigation</div>
+                <ul>
+                    <li><a href="index.html">Platform Overview</a></li>
+                    <li><a href="#fe3">FE3 Research</a></li>
+                    <li><a href="#tools">Available Tools</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-cat">
+                <div class="sidebar-cat-header">Related Hubs</div>
+                <ul>
+                    <li><a href="../WMLUP/index.html">WMLUP Hub</a></li>
+                    <li><a href="../W81MLUP/index.html">W81MLUP</a></li>
+                    <li><a href="../W7MLUP/index.html">W7MLUP</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="msn-main">
+            <section class="msn-section">
+                <div class="msn-section-header purple">
+                    <span>W10MLUP Research</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content">
+                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Windows 10 Mobile FE3 Update Research</p>
+                    <p>Focuses on the File-Exchange (FE3) update delivery system.</p>
+                </div>
+            </section>
+
+            <section class="msn-section">
+                <div class="msn-section-header green">
+                    <span>FE3 System Details</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content" id="fe3">
+                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
+                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand FE3 Update System Details</div>
+                        <div class="expandable-content" style="display: none; padding: 10px;">
+                            <p>FE3 is the modern update mechanism for Windows 10 Mobile, involving SOAP-based discovery and CAB-file delivery.</p>
+                            <ul>
+                                <li>Device identification: OemName, Model, and Branch</li>
+                                <li>Catalog format: XML-based discovery</li>
+                                <li>Download protocol: HTTP/S</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="msn-section">
+                <div class="msn-section-header orange">
+                    <span>Available Tools</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content" id="tools">
+                    <div style="display: flex; gap: 10px;">
+                        <div class="card" style="flex: 1;">
+                            <h3 style="margin-top: 0;">FE3 Discovery Tool</h3>
+                            <p>A mock utility to simulate update discovery on FE3 servers.</p>
+                        </div>
+                        <div class="card" style="flex: 1;">
+                            <h3 style="margin-top: 0;">CAB Decryptor</h3>
+                            <p>Research into decrypting signed update packages.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="msn-right-sidebar">
+            <div class="right-box">
+                <div class="right-box-header">Featured Channels</div>
+                <div class="right-box-content">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="#">Lumia 950 XL</a></li>
+                        <li><a href="#">W10M Dev Hub</a></li>
+                        <li><a href="docs/overview.md" target="_blank">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="msn-nav-bottom">
+        <a href="../WMLUP/index.html">MSN Home</a> |
+        <a href="#">My MSN</a> |
+        <a href="#">Search</a> |
+        <a href="#">Shopping</a> |
+        <a href="#">Money</a>
+    </div>
+
+    <footer style="margin-top: 0;">
+        <p>&copy; 2003 Microsoft Corporation. All rights reserved. Terms of Use Advertise TRUSTe Approved Privacy Statement</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

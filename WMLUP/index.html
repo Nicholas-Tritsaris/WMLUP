@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>msn.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="msn-top-bar">
+        <div class="msn-logo-area">
+            <h1>msn</h1>
+            <span style="font-size: 10px;">Help</span>
+        </div>
+        <div class="msn-tabs">
+            <div class="msn-tab active">MSN Home</div>
+            <div class="msn-tab">My MSN</div>
+            <div class="msn-tab">Sign In</div>
+        </div>
+        <div id="date-display" style="font-size: 10px;"></div>
+    </div>
+
+    <div class="msn-nav-bar">
+        <a href="index.html">MSN Home</a> |
+        <a href="https://github.com/WMLUP" target="_blank">GitHub</a> |
+        <a href="#">Search</a> |
+        <a href="#">Shopping</a> |
+        <a href="#">Money</a> |
+        <a href="#">People & Chat</a>
+    </div>
+
+    <div class="msn-search-bar">
+        <span>Search the Web:</span>
+        <input type="text" style="width: 200px;">
+        <button style="background-color: #ddd; border: 1px solid #999;">Search</button>
+        <div id="search-results" style="margin-left: 20px;"></div>
+    </div>
+
+    <div class="msn-container">
+        <aside class="msn-left-sidebar">
+            <div class="sidebar-cat">
+                <div class="sidebar-cat-header">Platforms</div>
+                <ul>
+                    <li><a href="../W10MLUP/index.html">Windows 10 Mobile</a></li>
+                    <li><a href="../W81MLUP/index.html">Windows Phone 8.1</a></li>
+                    <li><a href="../W7MLUP/index.html">Windows Phone 7</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-cat">
+                <div class="sidebar-cat-header">Resources</div>
+                <ul>
+                    <li><a href="#">Developer SDKs</a></li>
+                    <li><a href="#">Update Catalogs</a></li>
+                    <li><a href="#">Community Forum</a></li>
+                    <li><a href="#">Lumia Firmwares</a></li>
+                    <li><a href="#">Interop Tools</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-cat">
+                <div class="sidebar-cat-header">Shop</div>
+                <ul>
+                    <li><a href="#">Lumia Accessories</a></li>
+                    <li><a href="#">WP7 Devices</a></li>
+                    <li><a href="#">Repair Kits</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="msn-main">
+            <section class="msn-section">
+                <div class="msn-section-header purple">
+                    <span>WMLUP Top Headlines</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content">
+                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Welcome to the WMLUP Hub!</p>
+                    <p>A research-grade hub for exploring and restoring update systems on legacy Windows Mobile devices.</p>
+                    <ul style="list-style: square; padding-left: 15px;">
+                        <li>W10M FE3 Research project launched.</li>
+                        <li>WP8.1 Metadata recovery efforts successful.</li>
+                        <li>Zune-based WP7 updates investigation ongoing.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="msn-section">
+                <div class="msn-section-header green">
+                    <span>WMLUP Platform Research</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content">
+                    <div style="display: flex; gap: 10px;">
+                        <div class="card" style="flex: 1;">
+                            <h3 style="margin-top: 0;"><a href="../W10MLUP/index.html">W10MLUP</a></h3>
+                            <p>FE3 update system investigation and tools.</p>
+                        </div>
+                        <div class="card" style="flex: 1;">
+                            <h3 style="margin-top: 0;"><a href="../W81MLUP/index.html">W81MLUP</a></h3>
+                            <p>WP8 / 8.1 metadata and update tools research.</p>
+                        </div>
+                        <div class="card" style="flex: 1;">
+                            <h3 style="margin-top: 0;"><a href="../W7MLUP/index.html">W7MLUP</a></h3>
+                            <p>WP7 exploration and Zune protocol research.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="msn-section">
+                <div class="msn-section-header yellow">
+                    <span>System Status</span>
+                    <span>more...</span>
+                </div>
+                <div class="msn-section-content">
+                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
+                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand System Status details</div>
+                        <div class="expandable-content" style="display: none; padding: 10px;">
+                            <p>All research modules are currently active. Last database sync: Just now.</p>
+                            <ul>
+                                <li>W10M FE3: In Progress</li>
+                                <li>WP8.1 Metadata: Optimized</li>
+                                <li>WP7 Zune Bridge: Beta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="msn-right-sidebar">
+            <div class="right-box">
+                <div class="right-box-header">Featured Channels</div>
+                <div class="right-box-content">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li><a href="#">Lumia 950 XL</a></li>
+                        <li><a href="#">Lumia 1020</a></li>
+                        <li><a href="#">WP7 Dev Hub</a></li>
+                        <li><a href="#">CAB Library</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="right-box-header">Quote of the Day</div>
+                <div class="right-box-content">
+                    <p style="font-style: italic;">"The best way to predict the future is to invent it."</p>
+                    <p style="font-size: 9px;">- Alan Kay</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="msn-nav-bottom">
+        <a href="index.html">MSN Home</a> |
+        <a href="#">My MSN</a> |
+        <a href="#">Hotmail</a> |
+        <a href="#">Search</a> |
+        <a href="#">Shopping</a> |
+        <a href="#">Money</a> |
+        <a href="#">People & Chat</a>
+    </div>
+
+    <footer style="margin-top: 0;">
+        <p>&copy; 2003 Microsoft Corporation. All rights reserved. Terms of Use Advertise TRUSTe Approved Privacy Statement</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
