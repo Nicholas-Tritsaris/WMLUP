@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>msn.com</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="msn-top-bar">
@@ -17,7 +17,7 @@
             <div class="msn-tab">My MSN</div>
             <div class="msn-tab">Sign In</div>
         </div>
-        <div id="date-display" style="font-size: 10px;"></div>
+        <div id="date-display" style="float: right; padding: 15px; font-size: 10px;"></div>
     </div>
 
     <div class="msn-nav-bar">
@@ -31,13 +31,13 @@
 
     <div class="msn-search-bar">
         <span>Search the Web:</span>
-        <input type="text" style="width: 200px;">
+        <input type="text" size="20">
         <button style="background-color: #ddd; border: 1px solid #999;">Search</button>
-        <div id="search-results" style="margin-left: 20px;"></div>
+        <div id="search-results" style="display: inline; margin-left: 10px;"></div>
     </div>
 
     <div class="msn-container">
-        <aside class="msn-left-sidebar">
+        <div class="msn-left-sidebar">
             <div class="sidebar-cat">
                 <div class="sidebar-cat-header">Platforms</div>
                 <ul>
@@ -51,83 +51,13 @@
                 <ul>
                     <li><a href="#">Developer SDKs</a></li>
                     <li><a href="#">Update Catalogs</a></li>
-                    <li><a href="#">Community Forum</a></li>
                     <li><a href="#">Lumia Firmwares</a></li>
                     <li><a href="#">Interop Tools</a></li>
                 </ul>
             </div>
-            <div class="sidebar-cat">
-                <div class="sidebar-cat-header">Shop</div>
-                <ul>
-                    <li><a href="#">Lumia Accessories</a></li>
-                    <li><a href="#">WP7 Devices</a></li>
-                    <li><a href="#">Repair Kits</a></li>
-                </ul>
-            </div>
-        </aside>
+        </div>
 
-        <main class="msn-main">
-            <section class="msn-section">
-                <div class="msn-section-header purple">
-                    <span>WMLUP Top Headlines</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content">
-                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Welcome to the WMLUP Hub!</p>
-                    <p>A research-grade hub for exploring and restoring update systems on legacy Windows Mobile devices.</p>
-                    <ul style="list-style: square; padding-left: 15px;">
-                        <li>W10M FE3 Research project launched.</li>
-                        <li>WP8.1 Metadata recovery efforts successful.</li>
-                        <li>Zune-based WP7 updates investigation ongoing.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="msn-section">
-                <div class="msn-section-header green">
-                    <span>WMLUP Platform Research</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content">
-                    <div style="display: flex; gap: 10px;">
-                        <div class="card" style="flex: 1;">
-                            <h3 style="margin-top: 0;"><a href="../W10MLUP/index.html">W10MLUP</a></h3>
-                            <p>FE3 update system investigation and tools.</p>
-                        </div>
-                        <div class="card" style="flex: 1;">
-                            <h3 style="margin-top: 0;"><a href="../W81MLUP/index.html">W81MLUP</a></h3>
-                            <p>WP8 / 8.1 metadata and update tools research.</p>
-                        </div>
-                        <div class="card" style="flex: 1;">
-                            <h3 style="margin-top: 0;"><a href="../W7MLUP/index.html">W7MLUP</a></h3>
-                            <p>WP7 exploration and Zune protocol research.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="msn-section">
-                <div class="msn-section-header yellow">
-                    <span>System Status</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content">
-                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
-                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand System Status details</div>
-                        <div class="expandable-content" style="display: none; padding: 10px;">
-                            <p>All research modules are currently active. Last database sync: Just now.</p>
-                            <ul>
-                                <li>W10M FE3: In Progress</li>
-                                <li>WP8.1 Metadata: Optimized</li>
-                                <li>WP7 Zune Bridge: Beta</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <aside class="msn-right-sidebar">
+        <div class="msn-right-sidebar">
             <div class="right-box">
                 <div class="right-box-header">Featured Channels</div>
                 <div class="right-box-content">
@@ -146,7 +76,76 @@
                     <p style="font-size: 9px;">- Alan Kay</p>
                 </div>
             </div>
-        </aside>
+        </div>
+
+        <div class="msn-main">
+            <div class="msn-section">
+                <div class="msn-section-header purple">
+                    <span class="more">more...</span>
+                    <span>WMLUP Top Headlines</span>
+                </div>
+                <div class="msn-section-content">
+                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Welcome to the WMLUP Hub!</p>
+                    <p>A research-grade hub for exploring and restoring update systems on legacy Windows Mobile devices.</p>
+                    <ul style="list-style: square; padding-left: 15px;">
+                        <li>W10M FE3 Research project launched.</li>
+                        <li>WP8.1 Metadata recovery efforts successful.</li>
+                        <li>Zune-based WP7 updates investigation ongoing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="msn-section">
+                <div class="msn-section-header green">
+                    <span class="more">more...</span>
+                    <span>WMLUP Platform Research</span>
+                </div>
+                <div class="msn-section-content">
+                    <table width="100%" cellpadding="5" cellspacing="0" border="0">
+                        <tr>
+                            <td width="33%" valign="top">
+                                <div class="card">
+                                    <h3 style="margin-top: 0; font-size: 12px;"><a href="../W10MLUP/index.html">W10MLUP</a></h3>
+                                    <p>FE3 update system investigation and tools.</p>
+                                </div>
+                            </td>
+                            <td width="33%" valign="top">
+                                <div class="card">
+                                    <h3 style="margin-top: 0; font-size: 12px;"><a href="../W81MLUP/index.html">W81MLUP</a></h3>
+                                    <p>WP8 / 8.1 metadata and update tools research.</p>
+                                </div>
+                            </td>
+                            <td width="33%" valign="top">
+                                <div class="card">
+                                    <h3 style="margin-top: 0; font-size: 12px;"><a href="../W7MLUP/index.html">W7MLUP</a></h3>
+                                    <p>WP7 exploration and Zune protocol research.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="msn-section">
+                <div class="msn-section-header yellow">
+                    <span class="more">more...</span>
+                    <span>System Status</span>
+                </div>
+                <div class="msn-section-content">
+                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
+                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand System Status details</div>
+                        <div class="expandable-content" style="display: none; padding: 10px;">
+                            <p>All research modules are currently active. Last database sync: Just now.</p>
+                            <ul>
+                                <li>W10M FE3: In Progress</li>
+                                <li>WP8.1 Metadata: Optimized</li>
+                                <li>WP7 Zune Bridge: Beta</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="msn-nav-bottom">
@@ -159,10 +158,10 @@
         <a href="#">People & Chat</a>
     </div>
 
-    <footer style="margin-top: 0;">
+    <footer>
         <p>&copy; 2003 Microsoft Corporation. All rights reserved. Terms of Use Advertise TRUSTe Approved Privacy Statement</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

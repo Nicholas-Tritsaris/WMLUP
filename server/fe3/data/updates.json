@@ -1,0 +1,22 @@
+[
+  {
+    "id": "KB15254",
+    "title": "Windows 10 Mobile Update",
+    "description": "Security update for Windows 10 Mobile devices",
+    "device": "RM-1085",
+    "min_version": "10.0.15254.0",
+    "max_version": "10.0.15254.600",
+    "file": "sample-update.cab",
+    "size": 12345678
+  },
+  {
+    "id": "KB81001",
+    "title": "WP 8.1 Critical Update",
+    "description": "Important stability improvements for Windows Phone 8.1",
+    "device": "RM-937",
+    "min_version": "8.10.12393.0",
+    "max_version": "8.10.14219.341",
+    "file": "wp81-update.cab",
+    "size": 56781234
+  }
+]

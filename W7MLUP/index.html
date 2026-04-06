@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>msn.com</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="msn-top-bar">
@@ -17,7 +17,7 @@
             <div class="msn-tab active">My MSN</div>
             <div class="msn-tab">Sign In</div>
         </div>
-        <div id="date-display" style="font-size: 10px;"></div>
+        <div id="date-display" style="float: right; padding: 15px; font-size: 10px;"></div>
     </div>
 
     <div class="msn-nav-bar">
@@ -31,19 +31,19 @@
 
     <div class="msn-search-bar">
         <span>Search the Web:</span>
-        <input type="text" style="width: 200px;">
+        <input type="text" size="20">
         <button style="background-color: #ddd; border: 1px solid #999;">Search</button>
-        <div id="search-results" style="margin-left: 20px;"></div>
+        <div id="search-results" style="display: inline; margin-left: 10px;"></div>
     </div>
 
     <div class="msn-container">
-        <aside class="msn-left-sidebar">
+        <div class="msn-left-sidebar">
             <div class="sidebar-cat">
-                <div class="sidebar-cat-header">WP7 Navigation</div>
+                <div class="sidebar-cat-header">WP7 Repair Hub</div>
                 <ul>
-                    <li><a href="index.html">Platform Overview</a></li>
-                    <li><a href="#zune">Zune Research</a></li>
-                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="index.html">Desktop Repair Hub</a></li>
+                    <li><a href="#zune">Zune Fixes</a></li>
+                    <li><a href="#phone">Phone Instructions</a></li>
                 </ul>
             </div>
             <div class="sidebar-cat">
@@ -54,61 +54,9 @@
                     <li><a href="../W81MLUP/index.html">W81MLUP</a></li>
                 </ul>
             </div>
-        </aside>
+        </div>
 
-        <main class="msn-main">
-            <section class="msn-section">
-                <div class="msn-section-header purple">
-                    <span>W7MLUP Research</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content">
-                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Windows Phone 7 Zune-based Update System Exploration</p>
-                    <p>Focuses on the PC-side update research for Windows Phone 7.</p>
-                </div>
-            </section>
-
-            <section class="msn-section">
-                <div class="msn-section-header green">
-                    <span>Zune Research</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content" id="zune">
-                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
-                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand Zune Update Protocols details</div>
-                        <div class="expandable-content" style="display: none; padding: 10px;">
-                            <p>Windows Phone 7 updates are orchestrated by the Zune software on a PC, using a proprietary communication protocol over USB.</p>
-                            <ul>
-                                <li>Communication: USB-based synchronization</li>
-                                <li>Update packets: Signed CAB packages</li>
-                                <li>Discovery: Server-side check via Zune</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="msn-section">
-                <div class="msn-section-header orange">
-                    <span>Available Tools</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content" id="tools">
-                    <div style="display: flex; gap: 10px;">
-                        <div class="card" style="flex: 1;">
-                            <h3 style="margin-top: 0;">Zune Proxy Mock</h3>
-                            <p>A research tool to intercept and simulate Zune update calls.</p>
-                        </div>
-                        <div class="card" style="flex: 1;">
-                            <h3 style="margin-top: 0;">USB Protocol Sniffer</h3>
-                            <p>Analyzing WP7 device communication with host PCs.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <aside class="msn-right-sidebar">
+        <div class="msn-right-sidebar">
             <div class="right-box">
                 <div class="right-box-header">Featured Channels</div>
                 <div class="right-box-content">
@@ -118,7 +66,80 @@
                     </ul>
                 </div>
             </div>
-        </aside>
+        </div>
+
+        <div class="msn-main">
+            <div class="msn-section">
+                <div class="msn-section-header purple">
+                    <span class="more">more...</span>
+                    <span>W7MLUP Desktop Repair Hub</span>
+                </div>
+                <div class="msn-section-content">
+                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Windows Phone 7 Zune-based Update System Exploration</p>
+                    <p>Since WP7 updates through a PC, this hub provides the necessary desktop-side tools and patches.</p>
+                </div>
+            </div>
+
+            <div class="msn-section" id="zune">
+                <div class="msn-section-header green">
+                    <span class="more">more...</span>
+                    <span>PC-Side Updater Tools</span>
+                </div>
+                <div class="msn-section-content">
+                    <div class="card">
+                        <h4 style="margin-top: 0;">Zune Update Restoration</h4>
+                        <p>Prerequisites for fixing Zune synchronization and update checks on Windows 10/11 PCs.</p>
+                        <ul style="padding-left: 15px;">
+                            <li><a href="#">Zune Update Fix (.exe)</a></li>
+                            <li><a href="#">Zune Root Certs</a></li>
+                            <li><a href="#">Zune Hosts-file Helper</a></li>
+                        </ul>
+                    </div>
+                    <div class="card" style="margin-top: 10px;">
+                        <h4 style="margin-top: 0;">Alternate Update Methods</h4>
+                        <ul style="padding-left: 15px;">
+                            <li><a href="#">WP7 CAB Sender</a></li>
+                            <li><a href="#">Seven-Eighter Tool</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msn-section" id="phone">
+                <div class="msn-section-header yellow">
+                    <span class="more">more...</span>
+                    <span>Phone-Readable Instructions</span>
+                </div>
+                <div class="msn-section-content">
+                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
+                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand Phone Setup details</div>
+                        <div class="expandable-content" style="display: none; padding: 10px;">
+                            <ol style="padding-left: 15px;">
+                                <li>Connect your WP7 device to your PC via USB.</li>
+                                <li>Ensure Zune software is running.</li>
+                                <li>If update fails, install the "Zune Update Fix" from the PC-Side Tools section above.</li>
+                                <li>Verify that your PC's time and date match the phone's.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msn-section">
+                <div class="msn-section-header orange">
+                    <span class="more">more...</span>
+                    <span>Rollback & Recovery</span>
+                </div>
+                <div class="msn-section-content">
+                    <div class="card">
+                        <ul style="padding-left: 15px;">
+                            <li><a href="#">WP7 Recovery Tool</a></li>
+                            <li><a href="#">Stock WP7 ROMs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="msn-nav-bottom">
@@ -129,10 +150,10 @@
         <a href="#">Money</a>
     </div>
 
-    <footer style="margin-top: 0;">
+    <footer>
         <p>&copy; 2003 Microsoft Corporation. All rights reserved. Terms of Use Advertise TRUSTe Approved Privacy Statement</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
