@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>msn.com</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="msn-top-bar">
@@ -17,7 +17,7 @@
             <div class="msn-tab active">My MSN</div>
             <div class="msn-tab">Sign In</div>
         </div>
-        <div id="date-display" style="font-size: 10px;"></div>
+        <div id="date-display" style="float: right; padding: 15px; font-size: 10px;"></div>
     </div>
 
     <div class="msn-nav-bar">
@@ -31,19 +31,19 @@
 
     <div class="msn-search-bar">
         <span>Search the Web:</span>
-        <input type="text" style="width: 200px;">
+        <input type="text" size="20">
         <button style="background-color: #ddd; border: 1px solid #999;">Search</button>
-        <div id="search-results" style="margin-left: 20px;"></div>
+        <div id="search-results" style="display: inline; margin-left: 10px;"></div>
     </div>
 
     <div class="msn-container">
-        <aside class="msn-left-sidebar">
+        <div class="msn-left-sidebar">
             <div class="sidebar-cat">
                 <div class="sidebar-cat-header">WP8.1 Navigation</div>
                 <ul>
                     <li><a href="index.html">Platform Overview</a></li>
-                    <li><a href="#metadata">Update Metadata</a></li>
-                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#updater">Check for Updates</a></li>
+                    <li><a href="#fixes">Update Fixes</a></li>
                 </ul>
             </div>
             <div class="sidebar-cat">
@@ -54,61 +54,9 @@
                     <li><a href="../W7MLUP/index.html">W7MLUP</a></li>
                 </ul>
             </div>
-        </aside>
+        </div>
 
-        <main class="msn-main">
-            <section class="msn-section">
-                <div class="msn-section-header purple">
-                    <span>W81MLUP Research</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content">
-                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Windows Phone 8 / 8.1 Update Metadata & Tools Research</p>
-                    <p>Focuses on the mid-complexity Windows Update style metadata.</p>
-                </div>
-            </section>
-
-            <section class="msn-section">
-                <div class="msn-section-header green">
-                    <span>Update Metadata</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content" id="metadata">
-                    <div class="expandable-box" style="border: 1px solid #ccc; padding: 5px;">
-                        <div class="expandable-header" style="font-weight: bold; color: #666;">[+] Click to expand Update Metadata details</div>
-                        <div class="expandable-content" style="display: none; padding: 10px;">
-                            <p>Windows Phone 8 uses a similar update delivery system to desktop Windows Update, relying on XML/CAB packages.</p>
-                            <ul>
-                                <li>Metadata discovery: XML catalog</li>
-                                <li>Package delivery: CAB file extraction</li>
-                                <li>OS identification: Registry-based device info</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="msn-section">
-                <div class="msn-section-header orange">
-                    <span>Available Tools</span>
-                    <span>more...</span>
-                </div>
-                <div class="msn-section-content" id="tools">
-                    <div style="display: flex; gap: 10px;">
-                        <div class="card" style="flex: 1;">
-                            <h3 style="margin-top: 0;">Metadata Parser</h3>
-                            <p>A tool for parsing WP8.1 update catalogs.</p>
-                        </div>
-                        <div class="card" style="flex: 1;">
-                            <h3 style="margin-top: 0;">Registry Mock</h3>
-                            <p>Simulating device registry for update simulation.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <aside class="msn-right-sidebar">
+        <div class="msn-right-sidebar">
             <div class="right-box">
                 <div class="right-box-header">Featured Channels</div>
                 <div class="right-box-content">
@@ -119,7 +67,89 @@
                     </ul>
                 </div>
             </div>
-        </aside>
+        </div>
+
+        <div class="msn-main">
+            <div class="msn-section">
+                <div class="msn-section-header purple">
+                    <span class="more">more...</span>
+                    <span>W81MLUP Research</span>
+                </div>
+                <div class="msn-section-content">
+                    <p style="font-weight: bold; font-size: 14px; color: #003399; margin-bottom: 5px;">Windows Phone 8 / 8.1 Update Metadata & Tools Research</p>
+                    <p>Focuses on the mid-complexity Windows Update style metadata.</p>
+                </div>
+            </div>
+
+            <div class="msn-section" id="updater">
+                <div class="msn-section-header green">
+                    <span class="more">more...</span>
+                    <span>Native Update Helper</span>
+                </div>
+                <div class="msn-section-content">
+                    <div class="card" style="text-align: center; padding: 20px;">
+                        <h3 style="margin-top: 0;">Check for Updates</h3>
+                        <p>Identify your device and discover available build paths.</p>
+                        <button id="check-btn" style="padding: 5px 15px; background-color: #eee; border: 2px solid #666; font-weight: bold; cursor: pointer;">Scan Device</button>
+                        <div id="update-results" style="margin-top: 15px; border-top: 1px solid #ccc; padding-top: 10px; display: none;">
+                            <div id="device-info" style="font-weight: bold; color: #003399; margin-bottom: 5px;"></div>
+                            <div id="update-status" style="margin-bottom: 10px;"></div>
+                            <div id="action-links"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msn-section" id="fixes">
+                <div class="msn-section-header orange">
+                    <span class="more">more...</span>
+                    <span>Update Fixes & Resources</span>
+                </div>
+                <div class="msn-section-content">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="50%" valign="top" style="padding-right: 5px;">
+                                <div class="card">
+                                    <h4 style="margin-top: 0;">Native Update Fixes</h4>
+                                    <ul style="padding-left: 15px;">
+                                        <li><a href="#">Root Certificates</a></li>
+                                        <li><a href="#">WUTS Fix Tool</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td width="50%" valign="top" style="padding-left: 5px;">
+                                <div class="card">
+                                    <h4 style="margin-top: 0;">Custom Enablers</h4>
+                                    <ul style="padding-left: 15px;">
+                                        <li><a href="#">WMLUP FE3 Patch</a></li>
+                                        <li><a href="#">Registry Redirector</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%" valign="top" style="padding-top: 10px; padding-right: 5px;">
+                                <div class="card">
+                                    <h4 style="margin-top: 0;">PC-Side Tools</h4>
+                                    <ul style="padding-left: 15px;">
+                                        <li><a href="#">Interop Tools</a></li>
+                                        <li><a href="#">WUT (Windows Update Tool)</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td width="50%" valign="top" style="padding-top: 10px; padding-left: 5px;">
+                                <div class="card">
+                                    <h4 style="margin-top: 0;">Rollback Files</h4>
+                                    <ul style="padding-left: 15px;">
+                                        <li><a href="#">Stock Registry Script</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="msn-nav-bottom">
@@ -130,10 +160,10 @@
         <a href="#">Money</a>
     </div>
 
-    <footer style="margin-top: 0;">
+    <footer>
         <p>&copy; 2003 Microsoft Corporation. All rights reserved. Terms of Use Advertise TRUSTe Approved Privacy Statement</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
