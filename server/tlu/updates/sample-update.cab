@@ -1,0 +1,9 @@
+# Dummy CAB file content for WMLUP TLU Testing
+# This is a sample file representing a Windows Phone update package.
+# In a real scenario, this would be a properly signed .cab file.
+[MSCF]
+ID=KB15254
+Version=10.0.15254.603
+Payload=Sample Windows 10 Mobile Security Update
+Checksum=1234567890ABCDEF
+EOF
